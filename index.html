@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,62 @@
     <script src="package.json"></script>
     <title>PsyTech UX by Xenia Lechler</title>
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="index.js">
 <!-- GOOGLE FONTS - Adds various fonts from Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
     <!-- Install Tailwind -->
 <!-- Add play CDN script, enabling Tailwind utility classes to style content -->
     <script src="https://cdn.tailwindcss.com"></script>
-<!-- Edit the tailwind.config object to customize config -->
-    <script> tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            montserrat: '#DEEAFD',
-          }
-        }
-      }
-    }
-    </script>
 <!-- Enable first-party plugins using the 'plugins' query parameter -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 <!-- Include Flowbite via CDN by requiring minified stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
-<!-- Include Flowbite via CDN by requiring minified stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body style="background-color: e0ffff;">
     <header>
+      <h1 style="background-color: e0ffff; font-size: 580%;">
+        PsyTech
+      </h1>
       <div id="scroll-container">
-        <div id="scroll-text"></div>
+        <div id="scroll-text">
+          <h3 style="font-style: italic;">
+            ⸻USER EXPERIENCE⸻RESEARCH⸻USABILITY⸻DATA & ANALYTICS⸻PSYCHOLOGY⸻COGNITIVE & BEHAVIORAL ERGONOMICS⸻
+          </h3>
+        </div>
       </div>
     </header>
-    <h1>PsyTech UX</h1>
-    <h2>Nu? NU NU NU</h2>
-    <script src="index.js"></script>
-<!-- INCLUDE FLOWBITE VIA CDN: Req. minified stylesheet inside body tag -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <ul>
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="contact">Contact</a>
+      </li>
+    </ul>
+    <div class="city">
+      <h2>London</h2>
+      <p>London is the capital of England.</p>
+    </div> 
+    <div class="city">
+      <h2>Paris</h2>
+      <p>Paris is the capital of France.</p>
+    </div>
+    <div class="city">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <footer>
+      <button id="time;" type="button;" style="font-weight: bold;"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+          What time is it?
+      </button>
+      <p id="demo">
+        ⏱
+      </p>
+    </footer>
   </body>
 </html>

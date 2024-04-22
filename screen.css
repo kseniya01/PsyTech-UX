@@ -1,56 +1,61 @@
 /* Add screen styles below */
 body {
-    font-size: 100%;
-    background-image: -moz-repeating-linear-gradient(ArialBlue);
+    background-color: #e0ffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #e0ffff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 h1 {
+    background-color: #e0ffff;
     font-family: "Caveat", sans-serif;
     font-style: italic;
-    font-weight: bold;
-    font-size: 300%;
     text-align: center;
     text-shadow: 0.5px 0.5px 0.5px #ababab;
-    padding: 20px;
-    margin: 20px;
+    margin: auto;
+}
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 280%;
+    text-align: right;
+    padding-bottom: auto;
+    margin: auto;
 }
 
 #scroll-container {
     border: 0px solid black;
     border-radius: 0px;
     overflow: hidden;
-    background-color: white;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 150px;
+    background-color: #e0ffff;
 }
-  
 #scroll-text {
     /* animation properties */
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    
-    -moz-animation: my-animation 35s linear infinite;
-    -webkit-animation: my-animation 35s linear infinite;
-    animation: my-animation 35s linear infinite;
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 15s linear infinite;
+    padding-bottom: 0px;
+    margin-top: 0px;
 }
-
 /* for Firefox */
 @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
     to { -moz-transform: translateX(-100%); }
 }
-
 /* for Chrome */
 @-webkit-keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
     to { -webkit-transform: translateX(-100%); }
 }
-
 @keyframes my-animation {
     from {
       -moz-transform: translateX(100%);
@@ -63,43 +68,57 @@ h1 {
       transform: translateX(-100%);
     }
 }
-    
-.details p {
-    text-align: left;
-    padding: auto;
-}
 
-.details img {
-    padding: auto;
-    margin: auto;
-}
-
-.details ul li {
+ul {
     list-style-type: none;
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #e0ffff;
+    position: fixed;
+    top: 0;
+    width: auto;
+}
+li {
+    float: left;
+}
+a {
+    display: block;
     padding: auto;
-}
-
-.details ul li.challah {
-    background: url('challah.PNG') no-repeat center left;
-    margin: 15px 15px 15px 15px;
-}
-
-.about p {
+    background-color: #e0ffff;
+} 
+li a {
+    display: block;
+    color: black;
     text-align: center;
-    margin: 10px;
-}
-
-/* Style all font social media icons*/
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
+    padding: 14px 14px;
     text-decoration: none;
-  }
-  
-  /* Add a hover effect to social media icons */
-  .fa:hover {
-    opacity: 0.7;
-  }  
+}
+li a:hover {
+    background-color: #e0ffff;
+}
+li a:hover:not(.active) {
+    background-color: #e0ffff;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+.active {
+    background-color: #b2ffff;
+    font-weight: bolder;
+}
+
+.city {
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 0.5px #ababab;
+    border: 2px solid aliceblue;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
