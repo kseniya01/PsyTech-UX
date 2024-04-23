@@ -17,7 +17,7 @@
   <!-- Includes Flowbite via CDN by requiring minified stylesheet. -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
 <!-- Creates webpage tab display name for the about page. -->
-  <title>PsyTech UX by Xenia Lechler</title>
+  <title>About</title>
 <!-- Adds fonts sourced from Google Fonts -->
   <!-- POPPINS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
@@ -49,26 +49,56 @@ Creates a header including a navigation bar alongside a primary title/H1 and an 
   <!-- PAGE DIVIDER
   Adds a solid-line page divider to the home page. -->
     <hr class="solid">
+  <!-- Creates the parameters for H4 -->
+  <h4 style="background-color: e0ffff; font-size: 400%;"> The roots of research grow from human-centered thinking. </h4>
   </header>
 <!-- SUBJECT CARDS FOR ABOUT PAGE
-Creates three sections to house content in the aboout page. -->
+Creates sections to house content in the aboout page. -->
   <section id="about">
-  <!-- SUBJECT #1: Human-Subjects Research (IRB) -->
+    <!-- PROFILE CARD -->
     <div class="subject">
-      <h2>Human-Subjects Research</h2>
-      <p>Description for humanb-subjects research.</p>
+      <img class="block mx-auto align-center" src="picture.png">
+      <h1 style="color:black; font-size:350%">Xenia Lechler</h1>
+      <p>As a growing UX specialist with a unique blend of expertise in psychology and computer science, I bring a multifaceted 
+      perspective to the field of user experience. Currently completing my master's program in user experience, I am passionate 
+      about integrating principles from psychology and computer science to create intuitive and user-centric digital experiences.</p> 
+      <p>With a solid foundation in human behavior and cognition, coupled with technical proficiency in software development, I am 
+      adept at bridging the gap between user needs and technological innovation. My goal is to leverage my diverse skill set to craft 
+      engaging and impactful digital solutions that resonate with users on a meaningful level.</p>
+    </div>
+    <!-- SUBJECT #1: Human-Subjects Research (IRB) -->
+    <div class="subject">
+      <!-- Creates the parameters for H4 -->
+      <h4 style="background-color: e0ffff; font-size: 150%; float: left; font-weight: bold;"> Human-centered design thinking </h4>
+      <p>My experience in IRB research and human subjects research encompasses a comprehensive understanding of ethical considerations and 
+      protocols governing research involving human participants. With a background in statistical analysis, I've applied rigorous methodologies
+      to ensure the integrity and validity of research outcomes. This expertise extends to designing studies, obtaining IRB approvals, recruiting 
+      participants, conducting data collection, and analyzing results. My commitment to ethical research practices and attention to detail ensures 
+      the protection of participants' rights and the quality of research outcomes.</p>
+      <p>In my role as a UX researcher, I bring a wealth of experience in designing and conducting user-centered research studies to enhance digital 
+      experiences. With a deep understanding of human behavior and interaction design principles, I navigate the intricacies of user research methodologies, 
+      from crafting insightful research questions to executing usability tests and gathering actionable insights. My proficiency in qualitative and quantitative 
+      analysis equips me to uncover patterns and trends, driving informed design decisions that prioritize user needs and preferences. Moreover, my dedication 
+      to ethical research practices ensures the protection of user privacy and the ethical treatment of research participants throughout the study process.</p>
     </div> 
-  <!-- SUBJECT #2: Data & Statistical Analysis -->
-    <div class="subject">
-      <h2>Data & Statistical Analysis</h2>
-      <p>Description for data & statistical analysis.</p>
-    </div>
-  <!-- SUBJECT #3: Design & Accessibiliy Principles -->
-    <div class="subject">
-      <h2>Principles of Design & Accessibility</h2>
-      <p>Description for principles of design and accessibility.</p>
-    </div>
   </section>
+<!-- PAGE DIVIDER
+Adds a solid-line page divider to the home page. -->
+<hr class="solid">
+<footer>
+  <address>
+    Reachable 24/7 <a href="mailto:sen@psytechux.xyz">via email</a><br>
+    Tel Aviv<br>
+    Israel
+  </address>
+  <button id="time;" type="button;" style="font-weight: bold;"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+      What time is it?
+  </button>
+  <p id="demo">
+    ⏱
+  </p>
+</footer>
 </body>
 
 </html>

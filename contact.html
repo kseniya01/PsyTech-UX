@@ -17,7 +17,7 @@
   <!-- Includes Flowbite via CDN by requiring minified stylesheet. -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
 <!-- Creates webpage tab display name for the about page. -->
-  <title>PsyTech UX by Xenia Lechler</title>
+  <title>Contact</title>
 <!-- Adds fonts sourced from Google Fonts -->
   <!-- POPPINS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
@@ -57,10 +57,12 @@ Creates a header including a navigation bar alongside a primary title/H1 and an 
   Creates a contact form including text inputs for the first and last name, and drop-down selection menu for location. -->
   <div style="font-family: 'Poppins', sans-serif;">
     <form action="/action_page.php">
+      <label for="message">Message</label>
+        <input type="text" id="message" name="yourmessage" placeholder="Type your message here.">
       <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Preferred first name...">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name here">
       <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Preferred last name...">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name here (Optional)">
       <label for="country">Country</label>
         <select id="country" name="country">
           <option value="india">India</option>
@@ -70,32 +72,82 @@ Creates a header including a navigation bar alongside a primary title/H1 and an 
         <option value="mexico">Mexico</option>
         <option value="russia">Russia</option>
         <option value="brazil">Brazil</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
-        <option value="country">Country</option>
+        <option value="japan">Japan</option>
+        <option value="israel">Israel</option>
+        <option value="canada">Canada</option>
+        <option value="southafrica">South Africa</option>
+        <option value="argentina">Argentina</option>
+        <option value="sweden">Sweden</option>
+        <option value="afganistan">Afganistan</option>
+        <option value="kazakhstan">Kazakhstan</option>
+        <option value="sudan">Sudan</option>
+        <option value="ireland">Ireland</option>
+        <option value="spain">Spain</option>
+        <option value="germany">Germany</option>
+        <option value="italy">Italy</option>
+        <option value="uk">United Kingdom</option>
+        <option value="iceland">Iceland</option>
+        <option value="austria">Austria</option>
+        <option value="romania">Romania</option>
+        <option value="belarus">Belarus</option>
+        <option value="poland">Poland</option>
+        <option value="norway">Norway</option>
+        <option value="finland">Finland</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="switzerland">Switzerland</option>
+        <option value="denmark">Denmark</option>
+        <option value="scotland">Scotland</option>
+        <option value="serbia">Serbia</option>
+        <option value="slovenia">Slovenia</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="slovakia">Slovakia</option>
+        <option value="greece">Greece</option>
+        <option value="bulgaria">Bulgaria</option>
+        <option value="turkey">Turkey</option>
+        <option value="bosnia">Bosnia</option>
+        <option value="wales">Wales</option>
+        <option value="morocco">Morocco</option>
+        <option value="portugal">Portugal</option>
+        <option value="algeria">Algeria</option>
+        <option value="iraq">Iraq</option>
+        <option value="iran">Iran</option>
+        <option value="southkorea">South Korea</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="estonia">Estonia</option>
+        <option value="georgia">Georgia</option>
+        <option value="taiwan">Taiwan</option>
+        <option value="estonia">Estonia</option>
+        <option value="latvia">Latvia</option>
+        <option value="lithuania">Lithuania</option>
+        <option value="moldova">Moldova</option>
+        <option value="uzbekistan">Uzbekistan</option>
+        <option value="turkmenistan">Turkmenistan</option>
+        <option value="kyrgystan">Kyrgystan</option>
+        <option value="tajikistan">Tajikistan</option>
+        <option value="finland">Finland</option>
+        <option value="czechrepublic">Czech Republic</option>
+        <option value="belgium">Belgium</option>
+        <option value="bangladesh">Bangladesh</option>
     </select>
     <input type="submit" value="SUBMIT">
   </form>
 </div>
+<!-- PAGE DIVIDER
+Adds a solid-line page divider to the home page. -->
+<hr class="solid">
 <footer>
-    <button id="time;" type="button;" style="font-weight: bold;"
-      onclick="document.getElementById('demo').innerHTML = Date()">
-        What time is it?
-    </button>
-    <p id="demo">
-      ⏱
-    </p>
-  </footer>
+  <address>
+    Reachable 24/7 <a href="mailto:sen@psytechux.xyz">via email</a><br>
+    Tel Aviv<br>
+    Israel
+  </address>
+  <button id="time;" type="button;" style="font-weight: bold;"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+      What time is it?
+  </button>
+  <p id="demo">
+    ⏱
+  </p>
+</footer>
 
-  </body>
+</body>

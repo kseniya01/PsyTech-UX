@@ -156,17 +156,17 @@ input[type=text], select {
   box-sizing: border-box;
   }
 input[type=submit] {
-  background-color: aliceblue;
+  background-color: #b2ffff;
   color: black;
   font-weight: bold;
   border-radius: 40px;
   padding: 14px 20px;
   margin: 25px 0;
   width: 100%;
-  cursor: cell;
+  cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: aliceblue
+  background-color: aliceblue;
 }
 div {
   padding: 20px;
@@ -181,8 +181,6 @@ h4 {
 Adds a solid-line page divider to the home page. */
 hr.solid {
   border-top: 3px solid #424242;
-  padding: 25px;
-  margin:25px;
 }
 /* BG HOVER-TO-HIGHLIGHT
 Provides circular highlights when hovering over specific elements. */
@@ -201,4 +199,7 @@ Provides circular highlights when hovering over specific elements. */
 footer {
   padding: 20px;
   text-align: center;
+}
+address {
+  padding: 25px;
 }
