@@ -1,56 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Adds English and Hebrew display languages to assist searching & browsing. -->
+<html lang="en" lang="he">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="index.js"></script>
-    <script src="tailwind.config.js"></script>
-    <script src="package-lock.json"></script>
-    <script src="package.json"></script>
-    <title>PsyTech UX - About</title>
-    <link rel="stylesheet" href="screen.css">
-    <link rel="stylesheet" href="index.js">
-<!-- GOOGLE FONTS - Adds various fonts from Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gochi+Hand&family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
-    <!-- Install Tailwind -->
-<!-- Add play CDN script, enabling Tailwind utility classes to style content -->
-    <script src="https://cdn.tailwindcss.com"></script>
-<!-- Enable first-party plugins using the 'plugins' query parameter -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-<!-- Include Flowbite via CDN by requiring minified stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
-  </head>
-  <body style="background-color: e0ffff;">
-    <header>
-      <h1 style="background-color: e0ffff; font-size: 650%;">
-        PsyTech UX
-      </h1>
-    </header>
-    <ul style="font-weight: bold;">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
+
+<!-- ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩      H E A D      ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ -->
+<head> 
+
+<!-- Specifies a character set to display the webpage page properly. -->
+  <meta charset="UTF-8">
+<!-- Enables responsive interfaces for viewing on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Inputs various script sources & installs frameworks -->
+  <!-- Includes JS source script/stylesheet & CSS stylesheet. -->
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.js">
+  <link rel="stylesheet" href="screen.css">
+  <!-- Includes JSON source script & installs Tailwind. -->
+  <script src="tailwind.config.js"></script>
+  <script src="package-lock.json"></script>
+  <script src="package.json"></script>
+    <!-- Adds CDN script, enabling Tailwind utility classes to style content. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enables first-party plugins using the 'plugins' query parameter. -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Includes Flowbite via CDN by requiring minified stylesheet. -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+<!-- Creates webpage tab display name for the about page. -->
+  <title>About - PsyTech UX</title>
+<!-- Adds fonts sourced from Google Fonts -->
+  <!-- POPPINS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+
+</head>
+
+
+<!-- ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩      B O D Y      ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ -->
+<body>
+
+<!-- HEADER
+Creates a header including a navigation bar alongside a primary title/H1 and an animated text scroll container. -->
+  <header>
+  <!-- NAVIGATION BAR
+  Creates a navigation bar that always stays at the top of each page, including "home," "about," and "contact" pages. -->
+    <ul>
+      <li><a href="index.html" style="color: #000000;">Home</a></li>
+      <li><a href="about.html" style="color: #000000;">About</a></li>
+      <li><a href="contact.html" style="color: #000000;">Contact</a></li>
     </ul>
-    <div class="city">
-        <h2>London</h2>
-        <p>London is the capital of England.</p>
-      </div> 
-      <div class="city">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
+  <!-- H1
+  Creates a universal H1 website title display at the top of every page. -->
+    <h1 style="font-size: 650%; font-weight: bolder; top: 50px;"> PsyTech UX </h1>
+  <!-- TEXT SCROLL ANIMATION
+  Creates an animated text scroll container for the home page. -->
+    <div id="scroll-container">
+      <div id="scroll-text">
+        <h3> User Experience ↝ Research ↝ Usability ↝ Data & Analytics ↝ Psychology ↝ Cognitive & Behavioral Ergonomics </h3> 
       </div>
-      <div class="city">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+    </div>
+  <!-- PAGE DIVIDER
+  Adds a solid-line page divider to the home page. -->
+    <hr class="solid">
+  </header>
+  
+<!-- SUBJECT CARDS FOR ABOUT PAGE
+Creates three sections to house content in the aboout page. -->
+  <section id="about">
+  <!-- SUBJECT #1: Human-Subjects Research (IRB) -->
+    <div class="subject">
+      <h2>Human-Subjects Research</h2>
+      <p>Description for humanb-subjects research.</p>
+    </div> 
+  <!-- SUBJECT #2: Data & Statistical Analysis -->
+    <div class="subject">
+      <h2>Data & Statistical Analysis</h2>
+      <p>Description for data & statistical analysis.</p>
+    </div>
+  <!-- SUBJECT #3: Design & Accessibiliy Principles -->
+    <div class="subject">
+      <h2>Principles of Design & Accessibility</h2>
+      <p>Description for principles of design and accessibility.</p>
+    </div>
+  </section>
+
+</body>

@@ -1,230 +1,210 @@
-/* Add screen styles below */
+/* Defines primary styles in the body. */
 body {
-    background-color: #e0ffff;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #424242;
+  background-color: #e0ffff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
+/* HEADER
+Creates a header with a background gradiant animation, including a navigation bar, and title/H1,
+and an animated text scroll bar. */
 header {
-    background-color: #e0ffff;
-    color: #424242;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: example;
+  animation-duration: 4s;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
 }
-
+  /* BG GRADIANT ANIMATION
+  Incorporates the color gradiant animation source. */
 @keyframes example {
-    from {background-color: #b2ffff;}
-    to {background-color: #e0ffff;}
-  }
-
+  from {background-color: #bae9e9;}
+  to {background-color: #e0ffff;}
+}
+  /* H1
+  Creates title/primary heading H1 for the top of each page. */
 h1 {
-    background-color: #e0ffff;
-    color: #424242;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    text-shadow: 1px 1px 1px #ababab;
-    padding: auto;
-    margin: auto;
-    background-color: #e0ffff;
-    animation-name: example;
-    animation-duration: 4s;
+  text-shadow: 1px 1px 1px #ababab;
+  text-align: center;
+  margin: auto;
+  position: relative;
 }
+  /* TEXT SCROLL ANIMATION
+  Creates subtitle/H3 within animated scroll container for home page. */
 h3 {
-    font-family: "Poppins", sans-serif;
-    color: #424242;
-    font-size: 280%;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: auto;
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+  font-size: 280%;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
 }
-
+  /* Defines parameters of scroll text & container animation for webpage browser. */
 #scroll-container {
-    border: 0px solid black;
-    color: #424242;
-    border-radius: 0px;
-    overflow: -moz-hidden-unscrollable;
-    background-color: #e0ffff;
+  background-color: #e0ffff;
+  animation-name: example;
+  animation-duration: 4s;
+  border-radius: 0px;
+  overflow: -moz-hidden-unscrollable;
 }
 #scroll-text {
-    /* animation properties */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: my-animation 10s linear infinite;
-    -webkit-animation: my-animation 10s linear infinite;
-    animation: my-animation 50s linear infinite;
-    padding-bottom: 0px;
-    margin-top: 0px;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 80s linear infinite;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
 }
-/* for Firefox */
-@-moz-keyframes my-animation {
+    /* Defines scroll container properties for Firefox. */
+  @-moz-keyframes my-animation {
     from { -moz-transform: translateX(100%); }
     to { -moz-transform: translateX(-100%); }
 }
-/* for Chrome */
+    /*  Defines scroll container properties for Google Chrome. */
 @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
 }
 @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
-
+/* NAVIGATION BAR
+Creates a nagivation bar, including "home," "about," and "contact" pages. */
 ul {
-    list-style-type: none;
-    color: #424242;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #e0ffff;
-    position: fixed;
-    top: 0;
-    width: auto;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
+  background-color: #e0ffff;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  border-radius: 40px;
 }
+  /* Define overall properties for the navigation bar. */
 li {
-    float: left;
+  float: left;
 }
+  /* Define display properties for the each link within the navigation bar. */
 a {
-    display: block;
-    padding: auto;
-    background-color: #e0ffff;
+  display: block;
 } 
+  /* Define highlight/selection properties for the each link within the navigation bar. */
 li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
+  border-radius: 40px;
+  padding: 14px 14px;
 }
+  /* */
 li a:hover {
-    background-color: #e0ffff;
-}
-li a:hover:not(.active) {
-    background-color: #e0ffff;
-    font-style: italic;
-    font-weight: bolder;
-    text-align: center;
-}
-.active {
-    background-color: #b2ffff;
-    font-weight: bolder;
+  background-color: #b2ffff;
+  font-style: italic;
 }
 
-.city {
-    background-color: #FFFFFF;
-    color: black;
-    border-radius: 20px;
-    box-shadow: 0.5px 0.5px 0.5px #ababab;
-    border: 2px solid aliceblue;
-    margin: 20px;
-    padding: 20px;
+/*  */
+.subject {
+  background-color: #FFFFFF;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #ababab;
+  border: 2px solid aliceblue;
+  margin: 20px;
+  padding: 20px;
 }
 
+/*  */
 div.gallery {
-    margin: 5px;
-    float: center;
-    width: auto;
-    align-content: center;
-    align-self: center;
-    align-items: center;
-    display: flex;
-    color: #424242;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: auto;
+  justify-content: center;
   }
-  
-  
-  div.gallery img {
-    width: 30%;
-    height: auto;
-    align-items: center;
-    align-self: center;
-    align-items: center;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-    align-self: center;
-    align-items: center;
-  }
+div.gallery img {
+  width: 50%;
+}
+div.desc {
+  padding: 25px;
+}
 
 footer {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #e0ffff;
+  border-radius: 4px;
+  box-sizing: border-box;
   }
+input[type=submit] {
+  background-color: aliceblue;
+  color: black;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 14px 20px;
+  margin: 25px 0;
+  width: 100%;
+  cursor: cell;
+}
+input[type=submit]:hover {
+  background-color: aliceblue
+}
   
-  input[type=submit] {
-    width: 100%;
-    background-color: #b2ffff;
-    color: black;
-    font-weight: bold;
-    padding: 14px 20px;
-    margin: 25px 0;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: rgba(178, 255, 255, 0.527)
-  }
-  
-  div {
-    border-radius: 5px;
-    padding: 20px;
-  }
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
 
-  h4 {
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-  }
+h4 {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
 
-  hr.solid {
-    border-top: 3px solid #black;
-    padding: 25px;
-    margin:25px
-  }
+hr.solid {
+  border-top: 3px solid #424242;
+  padding: 25px;
+  margin:25px;
+}
 
-  .btn {
-    background-color: #e0ffff;
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
-    align-items: center;
-    border-radius: 125px;
-  }
+
+/* Provides circular highlights when hovering over specific elements. */
+
+.btn {
+  color: black;
+  padding: 16px 32px;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: 200px;
+}
   
-  .btn:hover {
-    background-color: #b2ffff;
-    color: white;
-  }
+.btn:hover {
+  background-color: #b2ffff;
+  color: white;
+}
