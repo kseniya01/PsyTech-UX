@@ -8,6 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Add Tailwind directives to CSS. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* HEADER
 Creates a header with a background gradiant animation, including a navigation bar, and title/H1,
 and an animated text scroll bar. */
@@ -59,8 +64,6 @@ h3 {
   -moz-animation: my-animation 10s linear infinite;
   -webkit-animation: my-animation 10s linear infinite;
   animation: my-animation 80s linear infinite;
-  padding-bottom: 0px;
-  margin-top: 0px;
   font-family: "Poppins", sans-serif;
 }
     /* Defines scroll container properties for Firefox. */
