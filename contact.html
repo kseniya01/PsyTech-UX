@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!-- Adds English and Hebrew display languages to assist searching & browsing. -->
+<html lang="he"></html>
 <html lang="en" lang="he">
-  
+
 
 <!-- ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩      H E A D      ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ -->
 <head> 
-
 <!-- Specifies a character set to display the webpage page properly. -->
   <meta charset="UTF-8">
 <!-- Enables responsive interfaces for viewing on different devices -->
@@ -13,31 +13,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- Inputs various script sources & installs frameworks -->
   <!-- Includes JS source script/stylesheet & CSS stylesheet. -->
-  <script src="index.js"></script>
-  <link rel="stylesheet" href="index.js">
   <link rel="stylesheet" href="screen.css">
-  <!-- Includes JSON source script & installs Tailwind. -->
-  <script src="tailwind.config.js"></script>
-  <script src="package-lock.json"></script>
-  <script src="package.json"></script>
-    <!-- Adds CDN script, enabling Tailwind utility classes to style content. -->
-  <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Enables first-party plugins using the 'plugins' query parameter. -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <!-- Includes Flowbite via CDN by requiring minified stylesheet. -->
+  <!-- Includes Flowbite via CDN by requiring minified stylesheet. -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
 <!-- Creates webpage tab display name for the about page. -->
-  <title>Contact - PsyTech</title>
+  <title>PsyTech UX by Xenia Lechler</title>
 <!-- Adds fonts sourced from Google Fonts -->
   <!-- POPPINS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
-  
 </head>
 
 
 <!-- ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩      B O D Y      ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ -->
 <body>
-
 <!-- HEADER
 Creates a header including a navigation bar alongside a primary title/H1 and an animated text scroll container. -->
   <header>
@@ -62,41 +50,40 @@ Creates a header including a navigation bar alongside a primary title/H1 and an 
   Adds a solid-line page divider to the home page. -->
     <hr class="solid">
   </header>
-
   <!-- H4
   Creates the parameters for H4 -->
   <h4 style="background-color: e0ffff; font-size: 400%;"> Reach out - we want to hear you. </h4>
   <!-- CONTACT FORM
   Creates a contact form including text inputs for the first and last name, and drop-down selection menu for location. -->
-    <div style="font-family: 'Poppins', sans-serif;">
-      <form action="/action_page.php">
+  <div style="font-family: 'Poppins', sans-serif;">
+    <form action="/action_page.php">
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Preferred first name...">
+        <input type="text" id="fname" name="firstname" placeholder="Preferred first name...">
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Preferred last name...">
+        <input type="text" id="lname" name="lastname" placeholder="Preferred last name...">
       <label for="country">Country</label>
-      <select id="country" name="country">
-      <option value="india">India</option>
-      <option value="china">China</option>
-      <option value="usa">USA</option>
-      <option value="australia">Australia</option>
-      <option value="mexico">Mexico</option>
-      <option value="russia">Russia</option>
-      <option value="brazil">Brazil</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
-      <option value="japan">Japan</option>
+        <select id="country" name="country">
+          <option value="india">India</option>
+        <option value="china">China</option>
+        <option value="usa">USA</option>
+        <option value="australia">Australia</option>
+        <option value="mexico">Mexico</option>
+        <option value="russia">Russia</option>
+        <option value="brazil">Brazil</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
+        <option value="country">Country</option>
     </select>
     <input type="submit" value="SUBMIT">
   </form>
