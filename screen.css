@@ -34,6 +34,16 @@ h1 {
   margin: auto;
   position: relative;
 }
+h2 {
+  color: #000000;
+  font-size: 450%;
+  font-weight: bolder;
+  text-align: center;
+  padding: 25px;
+}
+p {
+  padding: 25px;
+}
   /* TEXT SCROLL ANIMATION
   Creates subtitle/H3 within animated scroll container for home page. */
 h3 {
@@ -176,6 +186,7 @@ h4 {
   padding: 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  padding: 25px;
 }
 /* PAGE DIVIDER
 Adds a solid-line page divider to the home page. */
@@ -189,7 +200,7 @@ Provides circular highlights when hovering over specific elements. */
   padding: 16px 32px;
   transition: 0.3s;
   align-items: center;
-  border-radius: 200px;
+  border-radius: 0px;
 }
 .btn:hover {
   background-color: #b2ffff;
